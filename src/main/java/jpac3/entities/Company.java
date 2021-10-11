@@ -2,7 +2,7 @@ package jpac3.entities;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 public class Company {
 
     @Id

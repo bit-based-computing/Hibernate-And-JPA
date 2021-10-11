@@ -5,12 +5,14 @@ import jpac3.entities.Address;
 import javax.persistence.*;
 
 @Entity
+@Access(AccessType.FIELD)
 public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     @Embedded
+    @AttributeOverride(name = "city", column = @Column(name = "town"))
     private Address address;
 
     public int getId() {
