@@ -6,13 +6,13 @@ import jpac4.entities.composed.pk.pk.DepartmentPk;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+/*
+           @AttributeOverride and Composed Primary Keys
 
+ */
 public class Main {
     public static void main(String[] args) {
-        /*
-            @AttributeOverride and Composed Primary Keys
 
-         */
         EntityManagerFactory emf = Persistence
                 .createEntityManagerFactory("my-persistence-unit");
         EntityManager em = emf.createEntityManager();

@@ -8,7 +8,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.time.LocalDate;
 import java.util.Date;
-
+/*
+    @Enumerated and @Temporal types
+ */
 public class Main {
 
     public static void main(String[] args) {
